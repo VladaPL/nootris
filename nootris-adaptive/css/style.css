@@ -13,6 +13,9 @@ body {
 }
 
 .wrapper {
+    max-width: 1342px;
+    margin: 0 auto;
+    padding: 0 15px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -25,10 +28,10 @@ body {
 }
 
 /* Обращение ко всем объектам в классе которого встречается такая строка */
-[class*="__container"] {
+/* [class*="__container"] {
     max-width: 1312px;
     margin: 0 auto;
-}
+} */
 
 .header {
 }
@@ -40,23 +43,11 @@ body {
 }
 
 .header__logo {
+    margin-right: 30px;
 }
 
 .header__menu {
     flex: 1 1 auto;
-}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu__list {
-    display: flex;
-}
-
-.menu__item {
-    padding-right: 40px;
 }
 
 .header__button {
@@ -66,8 +57,8 @@ body {
 }
 
 .button__basket {
-    width: 40px;
-    height: 37px;
+    width: 33px;
+    height: 30px;
     background: url(../img/basket.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -88,6 +79,37 @@ body {
 .button {
 }
 
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    display: flex;
+    gap: 50px;
+}
+
+.menu__item {
+    /* padding-right: 40px; */
+}
+
+.menu__link {
+    color: var(--light-font-color);
+    transition: 0.7s;
+}
+
+.menu__link:hover {
+    color: var(--main-color);
+}
+
+
+
+.promo-section__container {
+    background: url(../img/bg-promo-section.png) no-repeat center;
+    background-color: var(--main-color);
+    background-size: cover;
+}
 .promo-section__slogan {
     font-weight: 700;
     font-size: 144px;
@@ -99,8 +121,8 @@ body {
     color: var(--dark-font-color);
     background-color: var(--main-color);
     font-size: 18px;
-    line-height: 21px;
-    padding: 16px 50px;
+    line-height: 2.1;
+    padding: 10px 55px;
     border-radius: 7px;
     transition: 0.5s;
 }
