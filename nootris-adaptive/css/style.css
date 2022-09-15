@@ -1,0 +1,110 @@
+body {
+    font-family: Rubik;
+    font-size: 18px;
+    --main-color: #FCB500;
+    --main-bg-color: #111111;
+    --light-font-color: #FFFFFF;
+    --dark-font-color: #000000;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--light-font-color);
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+    /* flex: пропорции пространства внутри контейнера, коэффициент сжатия, начальный размер контейнера; */
+}
+
+/* Обращение ко всем объектам в классе которого встречается такая строка */
+[class*="__container"] {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.header {
+}
+
+.header__container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+}
+
+.header__logo {
+}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    padding-right: 40px;
+}
+
+.header__button {
+    flex: 0 0 144px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__basket {
+    width: 40px;
+    height: 37px;
+    background: url(../img/basket.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.button__counter-goods {
+    width: 16px;
+    height: 16px;
+    padding-top: 2px;
+    background-color: var(--main-color);
+    color: var(--dark-font-color);
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button {
+}
+
+.promo-section__slogan {
+    font-weight: 700;
+    font-size: 144px;
+    text-transform: uppercase;
+    /* font-size: calc(40px + 104 * (100vw / 1440px)); */
+}
+
+.order__button {
+    color: var(--dark-font-color);
+    background-color: var(--main-color);
+    font-size: 18px;
+    line-height: 21px;
+    padding: 16px 50px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.order__button:hover {
+    background-color: #a8811d;
+}
