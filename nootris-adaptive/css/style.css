@@ -170,19 +170,79 @@ body {
 
 /* * PROMO START */
 
-.promo-section__container {
+.promo__container {
     background: url(../img/bg-promo-section.png) no-repeat center;
     background-color: var(--main-color);
     background-size: cover;
 }
-.promo-section__slogan {
+
+.promo__content {
+    position: relative;
+}
+.promo__slogan-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+
+.promo__slogan {
+    padding: 104px 0 30px 0;
     font-weight: 700;
     font-size: 144px;
     text-transform: uppercase;
+    line-height: 152px;
     /* font-size: calc(40px + 104 * (100vw / 1440px)); */
 }
 
+.promo__text--1 {
+    font-size: 24px;
+    color: var(--dark-font-color);
+    line-height: 28px;
+}
+
+.promo__image {
+    position: absolute;
+    top: -75px;
+    right: -60px;
+    z-index: 5;
+}
+
+
+.promo__image-wrapper {
+    max-width: 800px;
+
+}
+
+.promo__image-nootris {
+    width: 100%;
+}
+
+.image-nootris {
+}
+.promo__text-wrapper {
+}
+.promo__title {
+    padding: 110px 0 10px 0;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--dark-font-color);
+    line-height: 43px;
+    text-transform: uppercase;
+}
+.promo__text--2 {
+    padding-bottom: 96px;
+    color: var(--dark-font-color);
+    line-height: 21px;
+}
+
+
+
 /* * ORDER START */
+
+.order-section__container {
+    position: relative;
+    z-index: 1;
+}
 
 .order__button {
     color: var(--dark-font-color);
@@ -197,6 +257,7 @@ body {
 .order__button:hover {
     background-color: #a8811d;
 }
+
 
 /* * BURGER */
 
