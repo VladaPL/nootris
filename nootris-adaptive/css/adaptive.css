@@ -1,23 +1,23 @@
 /* PC */
 
-@media (max-width: 1087px) {
+/* @media (max-width: 1087px) {
     .wrapper {
         max-width: 970px;
     }
-}
+} */
 
 /* TABLET */
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
     .wrapper {
         max-width: 750px;
     }
-}
+} */
 
 /* MOBILE */
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
     .wrapper {
         max-width: none;
     }
-}
+} */
