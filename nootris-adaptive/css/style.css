@@ -23,21 +23,6 @@ body {
     flex-direction: column;
     min-height: 100%;
 }
-@media (max-width: 1087px) {
-    .wrapper {
-        max-width: 970px;
-    }
-}
-@media (max-width: 991.98px) {
-    .wrapper {
-        max-width: 950px;
-    }
-}
-@media (max-width: 767.98px) {
-    .wrapper {
-        max-width: none;
-    }
-}
 
 .main {
     flex: 1 1 auto;
@@ -75,16 +60,8 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-@media (max-width: 1087px) {
-    .header__button {
-        flex: 0 0 100px;
-    }
-}
-@media (max-width: 991.98px) {
-    .header__button {
-        flex: 0 0 50px;
-    }
-}
+
+
 
 .button__basket {
     width: 33px;
@@ -122,36 +99,9 @@ body {
     display: flex;
     gap: 50px;
 }
-@media (max-width: 1087px) {
-    .menu__list {
-        gap: 25px;
-    }
-}
-@media (max-width: 991.98px) {
-    .menu__list {
-        gap: 20px;
-        font-size: 16px;
-    }
-}
-@media (max-width: 767.98px) {
-    .menu__list {
-        position: absolute;
-        right: 0;
-        height: 93vh;
-        top: 7vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        background-color: var(--main-bg-color);
-        transform: translateX(100%);
-        text-transform: 0.5s ease-in;
-    }
 
-    .menu__list li {
-        opacity: 0;
-    }
-}
+
+
 
 .menu__item {
     text-align: center;
@@ -172,18 +122,18 @@ body {
 
 .promo__container {
     background: url(../img/bg-promo-section.png) no-repeat center;
-    background-color: var(--main-color);
+    background-color: #fad11d;
     background-size: cover;
 }
 
 .promo__content {
     position: relative;
 }
-.promo__slogan-wrapper {
+
+.promo__slogan-wrapper, .promo__text-wrapper {
     position: relative;
     z-index: 10;
 }
-
 
 .promo__slogan {
     padding: 104px 0 30px 0;
@@ -207,10 +157,8 @@ body {
     z-index: 5;
 }
 
-
 .promo__image-wrapper {
     max-width: 800px;
-
 }
 
 .promo__image-nootris {
@@ -219,8 +167,10 @@ body {
 
 .image-nootris {
 }
+
 .promo__text-wrapper {
 }
+
 .promo__title {
     padding: 110px 0 10px 0;
     font-weight: 700;
@@ -229,6 +179,7 @@ body {
     line-height: 43px;
     text-transform: uppercase;
 }
+
 .promo__text--2 {
     padding-bottom: 96px;
     color: var(--dark-font-color);
@@ -242,6 +193,7 @@ body {
 .order-section__container {
     position: relative;
     z-index: 1;
+    margin-top: 100px;
 }
 
 .order__button {
