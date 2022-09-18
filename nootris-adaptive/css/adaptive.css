@@ -27,6 +27,12 @@
         font-size: 2vw;
         line-height: 1.2;
     }
+    .virus__text, .ginger__text {
+        margin-top: 40px;
+    }
+    .order__container {
+    grid-template-columns: 1fr minmax(200px, 500px) 1fr;
+    }
 }
 
 
@@ -42,6 +48,11 @@
     .menu__list {
         gap: 20px;
         font-size: 16px;
+    }
+    .order-section__text {
+        margin: 80px 0 50px 0;
+        font-size: 5vw;
+        line-height: 1.2;
     }
 }
 
@@ -65,7 +76,6 @@
         transform: translateX(100%);
         text-transform: 0.5s ease-in;
     }
-
     .menu__list li {
         opacity: 0;
     }
@@ -74,6 +84,15 @@
     }
     .promo__text--1 {
         width: 350px;
+    }
+    .order__container {
+        grid-template-columns: 1fr;
+    }
+    .order__item_ginger{
+        grid-row-start: 2;
+    }
+    .ginger__image-wrapper, .virus__image-wrapper {
+        margin-top: 60px;
     }
 }
 
@@ -91,6 +110,12 @@
     }
     .promo__image {
         top: -6%;
+    }
+    .nootris__image-wrapper{
+        max-width: 400px;
+    }
+    .nootris__image{
+        width: 100%;
     }
 }
 
