@@ -70,6 +70,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+    cursor: pointer;
 }
 
 .button__counter-goods {
@@ -193,10 +194,98 @@ body {
 .order-section__container {
     position: relative;
     z-index: 1;
-    margin-top: 100px;
+    margin-top: 110px;
+}
+
+.order-section__text {
+    margin: 0 auto;
+    margin-bottom: 75px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+}
+.order-section__text_discount {
+    color: var(--main-color);
+}
+.order__container {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-columns: 1fr 700px 1fr;
+    grid-template-rows: 400px;
+    justify-items: center;
+}
+.order__item {
+}
+.order__ginger {
+}
+.ginger__image-wrapper, .virus__image-wrapper {
+    margin-top: 115px;
+}
+.ginger__image {
+}
+.ginger__text {
+}
+.order__text_main {
+    color: var(--main-color);
+}
+.order__nootris {
+}
+.nootris__price {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.nootris__price, .nootris__text, .virus__text, .ginger__text {
+    text-align: center;
+    line-height: 21px;
+}
+
+.virus__text, .ginger__text {
+    margin-top: 78px;
+}
+
+
+.nootris__price_old {
+    margin-right: 32px;
+    color: #ADADAD;
+    font-size: 36px;
+    line-height: 43px;
+    text-decoration: line-through;
+}
+.nootris__price_new {
+    font-size: 48px;
+    line-height: 57px;
+}
+.nootris__image-wrapper {
+}
+.nootris__image {
+}
+.nootris__text {
+    margin-top: 42px;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.order__text_nootris {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+}
+.order__virus {
+}
+.virus__image-wrapper {
+}
+.virus__image {
+}
+.virus__text {
 }
 
 .order__button {
+    max-width: 256px;
+    margin: 0 auto;
     color: var(--dark-font-color);
     background-color: var(--main-color);
     font-size: 18px;
@@ -204,11 +293,16 @@ body {
     padding: 10px 55px;
     border-radius: 7px;
     transition: 0.5s;
+    margin-bottom: 112px;
 }
 
 .order__button:hover {
     background-color: #a8811d;
 }
+
+.button {
+}
+
 
 
 /* * BURGER */
