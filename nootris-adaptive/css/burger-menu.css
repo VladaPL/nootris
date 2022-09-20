@@ -1,57 +1,104 @@
+body {
+    font-family: Rubik;
+    font-size: 18px;
+    --main-color: #FCB500;
+    --main-bg-color: #111111;
+    --light-font-color: #FFFFFF;
+    --dark-font-color: #000000;
+}
+
 /* * BURGER MENU START*/
 
-body {
-    overflow-x: hidden;
+/* BURGER BUTTON START*/
+
+.nav-toggle {
+    display: none;
 }
 
-.burger {
+.nav-toggle-label {
+    position: absolut;
     display: none;
+    flex-direction: column;
+    height: 31px;
+    padding: 0 0 0 15px;
     cursor: pointer;
 }
-@media (max-width: 767.98px) {
-    .burger {
-        display: block;
-    }
-}
 
-.line {
+.burger__line {
     width: 25px;
     height: 3px;
-    margin: 5px;
-    margin-left: 30px;
+    margin: 3px;
     background-color: var(--main-color);
-    transition: all 0.4s ease;
+    transition: 0.3s;
 }
 
-.menu__items li {
-    opacity: 0; 
-    padding-right: 40px;
+.burger__line--two {
+    transition: 0s;
 }
 
-.nav__active {
-    transform: translateX(0px);
+.nav-toggle-label.active .burger__line--one {
+    transform: rotate(-45deg) translate(-6px, 7px);
 }
 
-@keyframes nav-links-fade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
+.nav-toggle-label.active .burger__line--two {
+    visibility: hidden;
+}
+
+.nav-toggle-label.active .burger__line--tree {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* BURGER MENU START */
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        display: none;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
+}
+
+.main-menu__link {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.main-menu__link:active,
+.main-menu__link:hover {
+    color: var(--main-color);
+}
+
+nav.main-menu.active {
+    width: 100%;
+    transform: scaleX(1);
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 767.98px) {
+    .nav-bar {
+        height: 50px;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(20, 49, 31, 0.5);
+    }
+    .nav-toggle-label {
+        display: flex;
+    }
+    .main-menu {
+        position: absolute;
+        text-align: center;
+        background: var(--main-bg-color);
+        left: 0;
+        width: 0;
+        z-index: 15;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 0.3s ease;
+    }
+
+    .main-menu__link {
+        display: block;
+        color: var(--light-font-color);
+        padding: 20px;
+        font-size: 18px;
     }
 }
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
